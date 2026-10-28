@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A gradual 7-day digital detox protocol to reset your technology habits, quiet mental noise, and reclaim hours of everyday presence.">
+  <title>7-Day Challenge — Digital Detox</title>
+  <!-- Anti-Flash Synchronous Theme Initializer -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('digital-detox-theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Minimal Editorial Navbar -->
+  <header class="nav-wrapper-editorial">
+    <div class="container">
+      <nav class="navbar-editorial" aria-label="Main Navigation">
+        <a href="index.html" class="nav-brand">
+          <span class="nav-brand-dot"></span>
+          <span>Digital Detox</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links-desktop">
+          <li><a class="nav-item-link" href="index.html">Home</a></li>
+          <li><a class="nav-item-link" href="problem.html">Problem</a></li>
+          <li><a class="nav-item-link" href="effects.html">Effects</a></li>
+          <li><a class="nav-item-link" href="ideas.html">Detox Ideas</a></li>
+          <li><a class="nav-item-link active" href="challenge.html">7-Day Challenge</a></li>
+        </ul>
+
+        <!-- Right Controls: Theme Toggle & CTA -->
+        <div class="nav-right-controls">
+          <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme" title="Toggle Theme" type="button">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="12" y1="2" x2="12" y2="4"></line>
+              <line x1="12" y1="20" x2="12" y2="22"></line>
+              <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line>
+              <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"></line>
+              <line x1="2" y1="12" x2="4" y2="12"></line>
+              <line x1="20" y1="12" x2="22" y2="12"></line>
+              <line x1="4.93" y1="19.07" x2="6.34" y2="17.66"></line>
+              <line x1="17.66" y1="6.34" x2="19.07" y2="4.93"></line>
+            </svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a class="btn-editorial btn-solid btn-sm" href="#day1">Start Day 1 ↓</a>
+
+          <button class="nav-mobile-btn" id="nav-toggle-btn" aria-label="Open Navigation Menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer-editorial" id="mobile-drawer">
+          <a class="nav-item-link" href="index.html">Home</a>
+          <a class="nav-item-link" href="problem.html">Problem</a>
+          <a class="nav-item-link" href="effects.html">Effects</a>
+          <a class="nav-item-link" href="ideas.html">Detox Ideas</a>
+          <a class="nav-item-link active" href="challenge.html">7-Day Challenge</a>
+          
+          <div class="mobile-drawer-footer">
+            <span style="font-size: 0.9rem; color: var(--text-muted);">Appearance</span>
+            <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme" title="Toggle Theme" type="button">
+              <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="12" y1="2" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="22"></line>
+                <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line>
+                <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"></line>
+                <line x1="2" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="22" y2="12"></line>
+                <line x1="4.93" y1="19.07" x2="6.34" y2="17.66"></line>
+                <line x1="17.66" y1="6.34" x2="19.07" y2="4.93"></line>
+              </svg>
+              <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+          </div>
+          <a class="btn-editorial btn-solid" href="#day1" style="margin-top: 8px;">Start Day 1 ↓</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Challenge Hero -->
+    <section class="section section-ivory" style="padding-bottom: 40px;">
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="editorial-tag">The 7-Day Protocol</span>
+          <h1 style="font-size: clamp(2.4rem, 5.8vw, 4.2rem);">Reclaim your life, one day at a time.</h1>
+          <p class="lead-text">
+            No dramatic extremes or throwing your device away. A gradual, science-backed progression that introduces one sustainable habit each morning.
+          </p>
+        </div>
+
+        <!-- Wide Cinematic Editorial Visual: What You Reclaim -->
+        <div class="editorial-image-frame challenge-banner-frame">
+          <img src="images/challenge_reclaim_life.jpg" alt="A person walking peacefully on a misty nature trail breathing fresh air without a phone" class="editorial-img" loading="eager">
+          <div class="editorial-image-badge">What You Reclaim • Mental Clarity & Real World Presence</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7-Day Timeline Flow -->
+    <section class="section section-cream" id="day1" style="padding-top: 40px;">
+      <div class="container">
+        <div class="challenge-journey-list">
+          <!-- Day 1 -->
+          <div class="journey-step-card">
+            <div class="journey-day-badge">Day 01</div>
+            <div class="journey-step-title">The Notification Audit</div>
+            <div class="journey-step-desc">
+              Disable all lock-screen alerts except direct human calls and SMS. Reclaim control over when you choose to open an app.
+            </div>
+          </div>
+
+          <!-- Day 2 -->
+          <div class="journey-step-card">
+            <div class="journey-day-badge">Day 02</div>
+            <div class="journey-step-title">The 30-Minute Morning Sanctuary</div>
+            <div class="journey-step-desc">
+              Do not touch your phone for the first 30 minutes after waking. Let your cortisol spike naturally with sunlight and water instead of emails.
+            </div>
+          </div>
+
+          <!-- Day 3 -->
+          <div class="journey-step-card">
+            <div class="journey-day-badge">Day 03</div>
+            <div class="journey-step-title">Screen-Free Dining</div>
+            <div class="journey-step-desc">
+              Eat all breakfast, lunch, and dinner meals without a screen in sight. Reconnect with the sensory experience of eating.
+            </div>
+          </div>
+
+          <!-- Day 4 -->
+          <div class="journey-step-card">
+            <div class="journey-day-badge">Day 04</div>
+            <div class="journey-step-title">The Grayscale Switch</div>
+            <div class="journey-step-desc">
+              Set your phone display to black-and-white. Experience how instantly boring social feeds and colorful app icons become.
+            </div>
+          </div>
+
+          <!-- Day 5 -->
+          <div class="journey-step-card">
+            <div class="journey-day-badge">Day 05</div>
+            <div class="journey-step-title">The 90-Minute Focus Sprint</div>
+            <div class="journey-step-desc">
+              Put your device in another room or inside a drawer for 90 consecutive minutes of unbroken creative or professional work.
+            </div>
+          </div>
+
+          <!-- Day 6 -->
+          <div class="journey-step-card">
+            <div class="journey-day-badge">Day 06</div>
+            <div class="journey-step-title">The Bedroom Exile</div>
+            <div class="journey-step-desc">
+              Charge your phone outside the bedroom overnight. Wake up to a physical alarm clock and enjoy a peaceful, phone-free evening wind-down.
+            </div>
+          </div>
+
+          <!-- Day 7 -->
+          <div class="journey-step-card" style="border-left: 4px solid var(--eucalyptus-accent); background-color: var(--bg-surface);">
+            <div class="journey-day-badge">Day 07</div>
+            <div class="journey-step-title">The Half-Day Analog Immersion</div>
+            <div class="journey-step-desc">
+              Spend 4 continuous weekend hours completely disconnected. Go for a long nature walk, read a book, journal, or spend unhurried time with family.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finale Celebration Card -->
+    <section class="section section-ivory">
+      <div class="container container-narrow" style="text-align: center;">
+        <span class="editorial-tag">Sustainable Living</span>
+        <h2 style="margin-bottom: 20px;">After the reset: an intentional baseline.</h2>
+        <p style="margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+          The goal of the 7-day challenge isn't lifelong asceticism—it is proving to yourself that you are in control of your device, not the other way around.
+        </p>
+        <div class="btn-row" style="justify-content: center; margin-top: 0;">
+          <a class="btn-editorial btn-solid btn-lg" href="ideas.html">Explore Sustainable Habits →</a>
+          <a class="btn-editorial btn-ghost btn-lg" href="index.html">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Editorial Footer -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-top-editorial">
+        <div class="footer-brand-bio">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 12px;">
+            <span class="nav-brand-dot"></span>
+            <span>Digital Detox</span>
+          </a>
+          <p style="font-size: 0.92rem;">
+            An open educational initiative helping humans build intentional technology habits and reclaim their attention in a hyper-connected world.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-clean">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="problem.html">The Problem</a></li>
+            <li><a href="effects.html">Effects on Life</a></li>
+            <li><a href="ideas.html">Detox Ideas</a></li>
+            <li><a href="challenge.html">7-Day Challenge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Key Principles</h4>
+          <ul class="footer-links-clean">
+            <li><a href="ideas.html">Phone-Free Mornings</a></li>
+            <li><a href="ideas.html">Bedtime Sanctuary</a></li>
+            <li><a href="ideas.html">Deep Focus Blocks</a></li>
+            <li><a href="challenge.html">Progressive Habit Reset</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-editorial">
+        <span>© 2026 Digital Detox Initiative. Pure HTML5 & CSS3.</span>
+        <span>Make space for what matters.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Universal Theme Persistence Script -->
+  <script src="theme.js"></script>
+</body>
+</html>

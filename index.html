@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Detox — Take back your attention. Build intentional digital habits for a calmer mind and a richer offline life.">
+  <title>Digital Detox — Take Back Your Attention</title>
+  <!-- Anti-Flash Synchronous Theme Initializer -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('digital-detox-theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Minimal Editorial Navbar -->
+  <header class="nav-wrapper-editorial">
+    <div class="container">
+      <nav class="navbar-editorial" aria-label="Main Navigation">
+        <a href="index.html" class="nav-brand">
+          <span class="nav-brand-dot"></span>
+          <span>Digital Detox</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links-desktop">
+          <li><a class="nav-item-link active" href="index.html">Home</a></li>
+          <li><a class="nav-item-link" href="problem.html">Problem</a></li>
+          <li><a class="nav-item-link" href="effects.html">Effects</a></li>
+          <li><a class="nav-item-link" href="ideas.html">Detox Ideas</a></li>
+          <li><a class="nav-item-link" href="challenge.html">7-Day Challenge</a></li>
+        </ul>
+
+        <!-- Right Controls: Theme Toggle & Reset CTA -->
+        <div class="nav-right-controls">
+          <!-- Compact Theme Toggle Button -->
+          <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme" title="Toggle Theme" type="button">
+            <!-- Sun Icon (Active in Dark Mode) -->
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="12" y1="2" x2="12" y2="4"></line>
+              <line x1="12" y1="20" x2="12" y2="22"></line>
+              <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line>
+              <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"></line>
+              <line x1="2" y1="12" x2="4" y2="12"></line>
+              <line x1="20" y1="12" x2="22" y2="12"></line>
+              <line x1="4.93" y1="19.07" x2="6.34" y2="17.66"></line>
+              <line x1="17.66" y1="6.34" x2="19.07" y2="4.93"></line>
+            </svg>
+            <!-- Moon Icon (Active in Light Mode) -->
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a class="btn-editorial btn-solid btn-sm" href="challenge.html">Start Reset →</a>
+
+          <!-- Mobile Menu Trigger Button -->
+          <button class="nav-mobile-btn" id="nav-toggle-btn" aria-label="Open Navigation Menu" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer-editorial" id="mobile-drawer">
+          <a class="nav-item-link active" href="index.html">Home</a>
+          <a class="nav-item-link" href="problem.html">Problem</a>
+          <a class="nav-item-link" href="effects.html">Effects</a>
+          <a class="nav-item-link" href="ideas.html">Detox Ideas</a>
+          <a class="nav-item-link" href="challenge.html">7-Day Challenge</a>
+          
+          <div class="mobile-drawer-footer">
+            <span style="font-size: 0.9rem; color: var(--text-muted);">Appearance</span>
+            <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme" title="Toggle Theme" type="button">
+              <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="12" y1="2" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="22"></line>
+                <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line>
+                <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"></line>
+                <line x1="2" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="22" y2="12"></line>
+                <line x1="4.93" y1="19.07" x2="6.34" y2="17.66"></line>
+                <line x1="17.66" y1="6.34" x2="19.07" y2="4.93"></line>
+              </svg>
+              <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+          </div>
+          <a class="btn-editorial btn-solid" href="challenge.html" style="margin-top: 8px;">Start Reset →</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Editorial Hero Section with Modern Lifestyle Visual -->
+    <section class="hero-editorial">
+      <div class="container">
+        <div class="hero-editorial-grid">
+          <!-- Left Content -->
+          <div class="hero-editorial-content">
+            <span class="editorial-tag">Digital Wellbeing & Focus</span>
+            <h1 class="hero-editorial-headline">
+              Take back<br>
+              <span class="em">your attention.</span>
+            </h1>
+            <p class="lead-text">
+              Your phone should be a tool, not the place where your life happens. Simple, intentional boundaries for a clearer mind and a richer offline existence.
+            </p>
+            <div class="btn-row">
+              <a class="btn-editorial btn-solid btn-lg" href="challenge.html">Start the 7-Day Reset →</a>
+              <a class="btn-editorial btn-ghost btn-lg" href="problem.html">Explore the Problem</a>
+            </div>
+          </div>
+
+          <!-- Right Editorial Lifestyle Visual -->
+          <div class="hero-visual-editorial">
+            <div class="editorial-image-frame hero-frame">
+              <img src="images/hero_calm_lifestyle.jpg" alt="A person sitting peacefully reading by a window with their smartphone placed face-down on the table" class="editorial-img" loading="eager">
+              <div class="editorial-image-badge">Mindful Living • Phone Away</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split Editorial: The Cost of Always-On Living -->
+    <section class="section section-cream">
+      <div class="container">
+        <div class="editorial-split-section">
+          <div class="editorial-quote-block">
+            <p>“The technology in your pocket was engineered by thousands of designers whose single metric of success is how many minutes of your life they can extract today.”</p>
+            <span class="editorial-quote-author">— The Attention Economy</span>
+          </div>
+          <div>
+            <span class="editorial-tag">The Human Shift</span>
+            <h2>Attention is the rarest currency you own.</h2>
+            <p>
+              When your attention is fractured every 4 minutes by phantom vibrations and bottomless feeds, deep creative work and peaceful rest become impossible.
+            </p>
+            <ul class="editorial-list-clean">
+              <li>Average adults touch their phones over 2,600 times every day</li>
+              <li>Switching tasks costs up to 23 minutes of focus recovery time</li>
+              <li>Screen exposure before sleep disrupts melatonin and REM cycles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Clear Reset Modules -->
+    <section class="section section-ivory">
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="editorial-tag">Four Steps to Clarity</span>
+          <h2>A structured path back to real life.</h2>
+          <p>We don't advocate abandoning technology. We build deliberate guardrails so you remain the conscious operator of your time.</p>
+        </div>
+
+        <div class="reset-modules-grid">
+          <!-- Module 1 -->
+          <div class="reset-module-card">
+            <div>
+              <div class="reset-module-num">01</div>
+              <h3 class="reset-module-title">Recognize the Hook</h3>
+              <p class="reset-module-text">Understand the psychological mechanisms—intermittent rewards and infinite scroll—designed to keep you tapping.</p>
+            </div>
+            <a class="reset-module-link" href="problem.html">Read the Problem →</a>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="reset-module-card">
+            <div>
+              <div class="reset-module-num">02</div>
+              <h3 class="reset-module-title">Measure the Toll</h3>
+              <p class="reset-module-text">Explore documented clinical effects on sleep quality, chronic cognitive fatigue, social isolation, and anxiety.</p>
+            </div>
+            <a class="reset-module-link" href="effects.html">Explore Effects →</a>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="reset-module-card">
+            <div>
+              <div class="reset-module-num">03</div>
+              <h3 class="reset-module-title">Design Friction</h3>
+              <p class="reset-module-text">Implement painless environmental defaults: grayscale screens, charge stations outside the bedroom, and notification audits.</p>
+            </div>
+            <a class="reset-module-link" href="ideas.html">Browse Detox Ideas →</a>
+          </div>
+
+          <!-- Module 4 -->
+          <div class="reset-module-card">
+            <div>
+              <div class="reset-module-num">04</div>
+              <h3 class="reset-module-title">The 7-Day Protocol</h3>
+              <p class="reset-module-text">A gradual, zero-guilt daily progression to reset your neural baseline and reclaim hours of quiet everyday presence.</p>
+            </div>
+            <a class="reset-module-link" href="challenge.html">Join 7-Day Reset →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Minimal Contrast Callout -->
+    <section class="section section-contrast">
+      <div class="container container-narrow" style="text-align: center;">
+        <span class="editorial-tag editorial-tag-light">Take the First Step</span>
+        <h2 style="margin-bottom: 20px;">Ready to trade notification noise for true presence?</h2>
+        <p style="margin-bottom: 36px; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Join thousands who have reclaimed their mornings, improved their sleep, and rekindled genuine offline conversations.
+        </p>
+        <div class="btn-row" style="justify-content: center; margin-top: 0;">
+          <a class="btn-editorial btn-solid btn-lg" href="challenge.html" style="background-color: #ffffff; color: #121816;">Begin Day 1 Today →</a>
+          <a class="btn-editorial btn-ghost-dark btn-lg" href="ideas.html">Explore Simple Habits</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Editorial Footer -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-top-editorial">
+        <div class="footer-brand-bio">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 12px;">
+            <span class="nav-brand-dot"></span>
+            <span>Digital Detox</span>
+          </a>
+          <p style="font-size: 0.92rem;">
+            An open educational initiative helping humans build intentional technology habits and reclaim their attention in a hyper-connected world.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-clean">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="problem.html">The Problem</a></li>
+            <li><a href="effects.html">Effects on Life</a></li>
+            <li><a href="ideas.html">Detox Ideas</a></li>
+            <li><a href="challenge.html">7-Day Challenge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Key Principles</h4>
+          <ul class="footer-links-clean">
+            <li><a href="ideas.html">Phone-Free Mornings</a></li>
+            <li><a href="ideas.html">Bedtime Sanctuary</a></li>
+            <li><a href="ideas.html">Deep Focus Blocks</a></li>
+            <li><a href="challenge.html">Progressive Habit Reset</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-editorial">
+        <span>© 2026 Digital Detox Initiative. Pure HTML5 & CSS3.</span>
+        <span>Make space for what matters.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Universal Theme Persistence Script -->
+  <script src="theme.js"></script>
+</body>
+</html>
